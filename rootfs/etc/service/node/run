@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+# pipe stderr to stdout and run node server
+exec 2>&1
+exec node /var/www/html/index.js
